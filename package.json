@@ -58,6 +58,7 @@
     "colors": "~1.1.2",
     "dirty-chai": "1.2.2",
     "mocha": "^3.2.0",
+    "perfy": "1.1.2",
     "regenerator": "~0.9.7",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.8.0",
