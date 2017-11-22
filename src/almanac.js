@@ -2,6 +2,7 @@
 
 import Fact from './fact'
 import { UndefinedFactError } from './errors'
+import Promise from 'bluebird'
 
 let debug = require('debug')('json-rules-engine')
 let verbose = require('debug')('json-rules-engine-verbose')

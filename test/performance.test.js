@@ -47,9 +47,8 @@ describe('Performance', () => {
     perfy.start('any')
     await engine.run()
     const result = perfy.end('any')
-    expect(result.milliseconds).to.be.greaterThan(850) // assert lower value
-    expect(result.milliseconds).to.be.lessThan(1000)
-    console.log(result.milliseconds);
+    expect(result.time).to.be.greaterThan(.5) // assert lower value
+    expect(result.time).to.be.lessThan(1)
   })
 
   it('performs "all" quickly', async () => {
@@ -60,7 +59,7 @@ describe('Performance', () => {
     perfy.start('all')
     await engine.run()
     const result = perfy.end('all')
-    expect(result.milliseconds).to.be.greaterThan(800) // assert lower value
-    expect(result.milliseconds).to.be.lessThan(900)
+    expect(result.time).to.be.greaterThan(.5) // assert lower value
+    expect(result.time).to.be.lessThan(.850)
   })
 })

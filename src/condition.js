@@ -1,5 +1,6 @@
 'use strict'
 
+let Promise = require('bluebird')
 let debug = require('debug')('json-rules-engine')
 let isObjectLike = require('lodash.isobjectlike')
 

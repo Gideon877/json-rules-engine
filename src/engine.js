@@ -1,5 +1,6 @@
 'use strict'
 
+import Promise from 'bluebird'
 import Fact from './fact'
 import Rule from './rule'
 import Operator from './operator'

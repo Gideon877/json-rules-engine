@@ -1,5 +1,6 @@
 'use strict'
 
+import Promise from 'bluebird'
 import Condition from './condition'
 import RuleResult from './rule-result'
 import { EventEmitter } from 'events'
